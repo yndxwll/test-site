@@ -33,6 +33,9 @@
 	}
     }
 
+    &--t-padding {
+	padding: 80px;
+    }
 
     &--gutters {
 	margin-right: -65px;
@@ -52,8 +55,27 @@
 	padding-right: 100px;
 
     }
+
+    &--gutters-small {
+	margin-right: -45px;
+    }
+
+    &--gutters-small > div {
+	padding-right: 45px;
+    }
     
     &__b-margin-untill-medium {
 	margin-bottom:2rem;
+    }
+
+    &--equal-height-at-medium {
+	@mixin atMedium {
+	    display: flex;
+	}
+
+	& > div {
+	    float: none;
+	    display: flex;
+	}
     }
 }
